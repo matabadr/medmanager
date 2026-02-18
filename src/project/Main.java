@@ -14,10 +14,10 @@ public class Main {
 
     // ── Constantes services ──
     static final int MAX_SERVICES = 10;
-    static String[] nomsServices = {"Cardiologie", "Pédiatrie", "Urgences", "Chirurgie"};
-    static int[] capacitesServices = {20, 15, 30, 10};
-    static int[] occupationServices = {0, 0, 0, 0};
-    static int nbServices = 4;
+    static String[] nomsServices = {"Cardiologie", "Pédiatrie", "Urgences", "Chirurgie","dentist","general"};
+    static int[] capacitesServices = {20, 15, 30, 10,15,50};
+    static int[] occupationServices = {0, 0, 0, 0,0,0};
+    static int nbServices = 6;
 
     // ════════════════════════════════════════
     //  MAIN
@@ -36,7 +36,7 @@ public class Main {
                 case 3 -> rechercherPatient(scanner);
                 case 4 -> afficherStatistiques();
                 case 5 -> afficherPatientsTries();
-                case 0 -> System.out.println("\n👋 Au revoir !");
+                case 0 -> System.out.println("\n👋 A Bientot !");
                 default -> System.out.println("⚠ Choix invalide.");
             }
         } while (choix != 0);
