@@ -8,7 +8,6 @@ import java.util.Scanner;
 
 public class Main {
 
-    // ── Données partagées (état de l'application) ──
     static List<Patient> patients               = new ArrayList<>();
     static List<Medecin> medecins               = new ArrayList<>();
     static List<ServiceHospitalier> services    = new ArrayList<>();

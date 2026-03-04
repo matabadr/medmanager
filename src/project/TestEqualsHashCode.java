@@ -2,15 +2,6 @@ package project;
 
 import java.time.LocalDate;
 
-/**
- * Test des méthodes equals() et hashCode() de Patient.
- * Exercice 5 du Chapitre 2.
- *
- * Ce programme démontre :
- *   - equals() compare l'identité logique (l'ID), pas l'adresse mémoire
- *   - hashCode() est cohérent avec equals() (même ID → même hashCode)
- *   - == compare les références mémoire (toujours false pour deux new)
- */
 public class TestEqualsHashCode {
 
     public static void main(String[] args) {

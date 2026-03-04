@@ -4,19 +4,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Objects;
 
-/**
- * Représente un rendez-vous entre un Patient et un Medecin.
- * Exercice 6 (Bonus) — Chapitre 2.
- *
- * Un RendezVous est une ASSOCIATION :
- *   - Il référence un Patient et un Medecin sans les posséder.
- *   - Le patient et le médecin existent indépendamment du rendez-vous.
- *   - Si on supprime le RendezVous, Patient et Medecin restent intacts.
- *
- * C'est différent de la COMPOSITION dans ServiceHospitalier
- * où le service "possède" ses listes (elles n'ont pas d'existence
- * indépendante du service).
- */
+
 public class RendezVous {
 
     private static final DateTimeFormatter FORMATTER =
