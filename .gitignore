@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Eclipse files
 .classpath
 .project
@@ -10,3 +11,6 @@
 bin/
 out/
 build/
+=======
+/bin/
+>>>>>>> a30768a5213b4e67ef5e4603c9bd17ae5963a55d
