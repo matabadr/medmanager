@@ -1,5 +1,7 @@
 package enums;
 
+import exceptions.InvalidGroupeSanguinException;
+
 public enum GroupeSanguin {
     A_POSITIF("A+"), A_NEGATIF("A-"),
     B_POSITIF("B+"), B_NEGATIF("B-"),
@@ -14,6 +16,9 @@ public enum GroupeSanguin {
         for (GroupeSanguin gs : values()) {
             if (gs.label.equalsIgnoreCase(label)) return gs;
         }
-        throw new IllegalArgumentException("Groupe inconnu : " + label);
+
+        IllegalArgumentException cause = new IllegalArgumentException(
+            "Valeur inconnue dans l'enum GroupeSanguin : '" + label + "'");
+        throw new InvalidGroupeSanguinException(label, cause);
     }
 }
