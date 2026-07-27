@@ -41,6 +41,7 @@ public abstract class Personne {
     public void setNom(String nom)                       { this.nom = nom; }
     public void setPrenom(String prenom)                 { this.prenom = prenom; }
     public void setDateNaissance(LocalDate dateNaissance){ this.dateNaissance = dateNaissance; }
+    public LocalDate getDateNaissance() { return dateNaissance; }
 
     public String getTelephone()              { return telephone; }
     public void setTelephone(String telephone){ this.telephone = telephone; }

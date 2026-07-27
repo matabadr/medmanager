@@ -1,1 +1,6 @@
 /bin/
+/lib/jdk-21.0.5+11/
+/lib/javafx-sdk-21.0.5/
+/lib/pgsql/
+/lib/pg-data/
+/lib/*.zip
